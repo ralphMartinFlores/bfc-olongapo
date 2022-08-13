@@ -51,23 +51,23 @@ li {
     top: 0px;
     z-index: 1;
 }
-.nav-links a, label{
+.navbar__links a, label{
     color: var(--clr-whitelight);
 }
 /* LOGO */
-.logo img {
+.navbar__logo img {
     max-width: 100px;
     height: auto;
 }
 /* NAVBAR MENU */
-.menu {
+.navbar__menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 1rem;
     font-size: 1.125rem;
 }
-.menu li:hover {
+.navbar__menu li:hover {
     border: 4px solid black;
     -webkit-box-shadow: 4px 4px black;
             box-shadow: 4px 4px black;
@@ -76,7 +76,7 @@ li {
     -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
-.menu li {
+.navbar__menu li {
     /* border-radius: 50px; */
     border: 4px solid transparent;
     -webkit-box-shadow: 4px 4px transparent;
@@ -98,7 +98,7 @@ input[type=checkbox]{
         -ms-user-select: none;
             user-select: none;
 }
-.cta__container {
+.hero__content__cta {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -112,10 +112,10 @@ input[type=checkbox]{
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
-.cta__container img {
+.hero__content__cta img {
     max-width: 128px;
 }
-.button__cta {
+.hero__content__cta__button {
     padding: 0.5rem 1rem;
     border: 4px solid #000;
     text-align: center;
@@ -136,30 +136,30 @@ input[type=checkbox]{
     transition: all 0.3s;
     cursor: pointer;
 }
-.button__cta:hover, .button__seemenu:hover {
+.hero__content__cta__button:hover, .products__seemenubtn:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1);
 }
-.button__cta p:last-of-type{
+.hero__content__cta__button p:last-of-type{
     font-family: var(--ff-primary);
 }
-.button__cta .material-symbols-outlined {
+.hero__content__cta__button .material-symbols-outlined {
     display: block !important;
 }
-.products__container, .about__container, footer {
+.products, .services, footer {
     background-color: var(--clr-dynamicblack);
     padding: 1.5rem;
     color: var(--clr-whitelight);
 }
-.products__container_title, .testimonials__container_title, .about__container_title, .partners__container_title {
+.section__title {
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 700;
 }
-.products__container_subtitle, .about__container_subtitle, .testimonials__container_subtitle, .moreinfo_body, .partners__container_subtitle {
+.section__subtitle {
     font-family: var(--ff-secondary);
 }
-.productcard__container {
+.products__card {
     background-color: var(--clr-direwolf);
     margin-top: 1rem;
     -webkit-box-shadow: 4px 4px black;
@@ -167,18 +167,18 @@ input[type=checkbox]{
     border-radius: 8px;
     border: 4px solid black;
 }
-.productcard__container img {
+.products__card img {
     aspect-ratio: 1 / 1;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     vertical-align: bottom;
 }
-.product_name {
+.products__card__title {
     padding: 1rem 1rem 0.25rem 1rem;
     font-size: 1.5rem;
     font-weight: 700;
 }
-.coffee_type {
+.products__card__type {
     padding: 0.25rem 1rem;
     border-radius: 50px;
     background-color: var(--clr-darktoneink);
@@ -188,10 +188,7 @@ input[type=checkbox]{
     width: fit-content;
     font-size: 0.875rem;
 }
-.product_name .material-symbols-outlined {
-    vertical-align: middle;
-}
-.product__variations_container {
+.products__card__prices__grid {
     display: -ms-grid;
     display: grid;
     gap: 0.5rem;
@@ -199,7 +196,7 @@ input[type=checkbox]{
     grid-template-columns: repeat(2, 1fr);
     padding: 0 1rem 1rem 1rem;
 }
-.product__variations {
+.products__card__price {
     padding: 0.5rem;
     border: 1px solid gray;
     display: -webkit-box;
@@ -211,7 +208,7 @@ input[type=checkbox]{
             align-items: center;
     border-radius: 4px;
 }
-.button__seemenu {
+.products__seemenubtn {
     padding: 1rem;
     border: 4px solid black;
     -webkit-box-shadow: 4px 4px black;
@@ -234,30 +231,31 @@ input[type=checkbox]{
     transition: all 0.3s;
     cursor: pointer;
 }
-.button__seemenu a {
+.products__seemenubtn a {
     color: var(--clr-whitelight);
 }
-.about__container_subtitle {
+.services__subtitle {
     line-height: 1.7;
     text-align: justify;
     border-left: 4px solid var(--clr-black);
     padding-left: 1rem;
+    font-family: var(--ff-secondary);
 }
-.partners_logos {
+.partners__logos {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
-.partners_logos img {
+.partners__logos img {
     border-radius: 50%;
     max-width: 150px;
 }
-.moreinfo__container, .partners__container, .testimonials__container {
+.hero, .partners, .testimonials {
     padding: 1.5rem;
     color: var(--clr-whitelight);
 }
-.card__container--shadowed {
+.services__card {
     background-color: var(--clr-direwolf);
     padding: 1rem;
     -webkit-box-shadow: 4px 4px black;
@@ -266,14 +264,14 @@ input[type=checkbox]{
     border-radius: 8px;
     margin-top: 1rem;
 }
-.card__container--shadowed img {
+.services__card img {
     aspect-ratio: 1 / 1;
 }
-.card__container--shadowed p:first-of-type {
+.services__card p:first-of-type {
     font-size: 1.5rem;
     font-weight: 700;
 }
-.card__container--shadowed p:last-of-type {
+.services__card p:last-of-type {
     font-size: 0.875rem;
     font-family: var(--ff-secondary);
     line-height: 1.7;
@@ -309,11 +307,11 @@ input[type=checkbox]{
     font-family: var(--ff-secondary);
     line-height: 1.7;
 }
-.moreinfo_intro p:first-of-type {
+.hero__content__text p:first-of-type {
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 700;
 }
-.moreinfo_intro p:last-of-type {
+.hero__content__text p:last-of-type {
     font-size: 1.25rem;
     margin-bottom: 1rem;
     line-height: 1.7;
@@ -322,7 +320,7 @@ input[type=checkbox]{
     font-size: clamp(0.875rem, 2.5vw, 1rem);
     line-height: 1.7;
 }
-.moreinfo_images {
+.hero__content__images {
     display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -348,7 +346,7 @@ footer p:nth-child(2) {
 footer img {
     max-width: 200px;
 }
-.facebook--btn i {
+.footer__button i {
     font-size: 2rem;
     color: var(--clr-whitelight);
 }
@@ -373,7 +371,7 @@ footer img {
     background-color: #565656;
 }
 /* Modal styles */
-.modal-window {
+.products__modal {
     position: fixed;
     top: 0;
     right: 0;
@@ -387,12 +385,12 @@ footer img {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-.modal-window:target {
+.products__modal:target {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
 }
-.modal-window > div {
+.products__modal > div {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -405,14 +403,14 @@ footer img {
     -webkit-box-shadow: 4px 4px black;
             box-shadow: 4px 4px black;
 }
-.modal-window header {
+.products__modal header {
     font-weight: bold;
 }
-.modal-window img {
+.products__modal img {
     border-radius: 8px;
     vertical-align: bottom;
 }
-.modal-close {
+.products__modal--close {
     color: #aaa;
     line-height: 50px;
     font-size: 24px;
@@ -422,16 +420,16 @@ footer img {
     transition: all .3s;
     float: right;
 }
-.modal-close:hover {
+.products__modal--close:hover {
     color: black;
 }
-.modal-window > div {
+.products__modal > div {
     border-radius: 0.5rem;
 }
 
 /* Button styles */
 /* From uiverse.io by @ernestnash */
-.facebook--btn {
+.footer__button {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -448,7 +446,7 @@ footer img {
     border-radius: 8px;
 
 }
-.facebook--btn::before {
+.footer__button::before {
     content: "";
     position: absolute;
     left: 0;
@@ -460,10 +458,10 @@ footer img {
     transition: all .3s;
     z-index: -1;
 }
-.facebook--btn:hover::before {
+.footer__button:hover::before {
     transform: translateX(0);
 }
-.facebook--btn a {
+.footer__button a {
     color: var(--clr-whitelight);
     font-family: var(--ff-tertiary);
     font-size: 1.25rem;
@@ -471,17 +469,17 @@ footer img {
 }
 /* Menu Modal Responsive styles */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    .modal-window > div {
+    .products__modal > div {
         width: 95%;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .modal-window > div {
+    .products__modal > div {
         width: 75%;
     }
 }
 @media screen and (min-width: 769px) {
-    .modal-window > div {
+    .products__modal > div {
         width: 30%;
     }
 }
@@ -497,7 +495,7 @@ footer img {
             -ms-flex-align: center;
                 align-items: center;
     }
-    .productcard__container_grid, .card__container_grid, .testimonial__grid {
+    .products__grid, .services__card__grid, .testimonial__grid {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 1fr 1rem 1fr;
@@ -505,7 +503,7 @@ footer img {
         gap: 1rem;
         margin-top: 1rem;
     }
-    .productcard__container, .card__container--shadowed{
+    .productcard__container, .services__card{
         margin-top: 0;
     }
     .testimonial {
@@ -515,30 +513,30 @@ footer img {
 /* End of tablet layout */
 /* Small screens and laptop layout */
 @media screen and (min-width: 1024px) {
-    .logo img {
+    .navbar__logo img {
         max-width: 150px;
         height: auto;
         vertical-align: middle;
     }
-    .cta__container {
+    .hero__content__cta {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
     }
-    .products__container, .about__container, .testimonials__container {
+    .products, .services, .testimonials {
         padding: 9.375rem 0;
     }
-    .productcard__container_grid, .card__container_grid {
+    .products__grid, .services__card__grid {
         margin-top: 2rem;
         grid-template-columns: repeat(3, 1fr);
     }
     .testimonial__grid {
         margin-top: 2rem;
     }
-    .moreinfo__container {
+    .hero {
         padding: 0;
     }
-    .moreinfo__content {
+    .hero__content {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 1fr 4rem 1fr;
@@ -550,23 +548,23 @@ footer img {
         max-width: 70%;
         margin: 0 auto;
     }
-    .products__container--content, .services__container--content, .testimonials__container--content, .partners__container--content {
+    .container {
         max-width: 70%;
         margin: 0 auto;
     }
-    .moreinfo__container {
+    .hero {
         padding: 9.375rem 0;
     }
-    .moreinfo_images {
+    .hero__content__images {
         margin-top: 0;
     }
-    .partners__container {
+    .partners {
         text-align: center;
     }
-    .about__container_subtitle {
+    .services__subtitle {
         max-width: 75ch;
     }
-    .moreinfo__container, .testimonials__container {
+    .hero, .testimonials {
         background-image: url("assets/circle-scatter-haikei.svg");
         background-position: center;
         background-repeat: no-repeat;
@@ -576,7 +574,7 @@ footer img {
 /* End of layout */
 /* Mobile Navbar styles */
 @media screen and (max-width: 768px) {
-.menu { 
+.navbar__menu { 
     display:none;
     position: absolute;
     background-color:var(--clr-dynamicblack);
@@ -585,17 +583,17 @@ footer img {
     text-align: center;
     padding: 1rem 0;
 }
-.menu li:hover {
+.navbar__menu li:hover {
     display: inline-block;
     background-color:var(--clr-darktoneink);
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
-.menu li + li {
+.navbar__menu li + li {
     margin-top: 1rem;
 }
-input[type=checkbox]:checked ~ .menu{
+input[type=checkbox]:checked ~ .navbar__menu{
     display: block;
 }
 .hamburger {

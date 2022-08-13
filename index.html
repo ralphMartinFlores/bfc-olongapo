@@ -29,16 +29,16 @@
   <body>
     <nav class="navbar" id="home">
       <!-- LOGO -->
-      <div class="logo">
+      <div class="navbar__logo">
         <img src="assets/BFC-Website-Logo.png" alt="BFC logo">
       </div>
       <!-- NAVIGATION MENU -->
-      <ul class="nav-links">
+      <ul class="navbar__links">
         <!-- USING CHECKBOX HACK -->
         <input type="checkbox" id="checkbox_toggle" />
         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
         <!-- NAVIGATION MENUS -->
-        <div class="menu">
+        <div class="navbar__menu">
           <li>
             <a href="#">Home</a>
           </li>
@@ -54,29 +54,21 @@
         </div>
       </ul>
     </nav>
-    <!-- Hero -->
-    <section class="moreinfo__container">
-      <div class="moreinfo__content">
-        <div class="moreinfo_text">
-          <div class="moreinfo_intro">
+    <!-- Hero Section-->
+    <section class="hero">
+      <div class="hero__content">
+        <div>
+          <div class="hero__content__text">
             <p>High quality coffee doesn't always have to break the bank.</p>
-            <p>
-              The fastest growing cafe franchise in Metro Manila, <b>now available in Olongapo City.</b>
-              We are But First, Coffee - Olongapo.
-            </p>
+            <p> The fastest growing cafe franchise in Metro Manila, <b>now available in Olongapo City.</b> We are But First, Coffee - Olongapo. </p>
           </div>
-          <!-- <p class="moreinfo_body">We help Filipino coffee producers by utilizing premium local beans, and with the help of our combined technical know-how, we develop a premium product that can compete with the market's leading brands while being reasonably priced so that every Filipino may enjoy it. Anyone looking for a nice cup of coffee, anytime, anyplace, will find it accessible thanks to our best-tasting coffee and free delivery service. </p> -->
-          <div class="cta__container">
+          <div class="hero__content__cta">
             <img src="assets/right-arrow.png" alt="Right arrow image pointing to call to action button">
-            <a class="button__cta" href="#products">
-              Learn more about BFC below 
-              <div class="material-symbols-outlined"> 
-                expand_more 
-              </div>
+            <a class="hero__content__cta__button" href="#products"> Learn more about BFC below <div class="material-symbols-outlined"> expand_more </div>
             </a>
           </div>
         </div>
-        <div class="moreinfo_images">
+        <div class="hero__content__images">
           <img src="assets/more about 1.png" alt="Glass container with coffee beans image">
           <img src="assets/more about 2.jpg" alt="Brewery station image">
           <img src="assets/more about 3.jpg" alt="Main dining place image">
@@ -86,127 +78,129 @@
     </section>
     <!-- End of Hero -->
     <!-- Products Section -->
-    <section class="products__container" id="products">
-      <div class="products__container--content">
-        <p class="products__container_title">Products</p>
-      <p class="products__container_subtitle">Check out our best sellers from each category and what we have more to offer.</p>
-      <div class="productcard__container_grid">
-        <div class="productcard__container">
-          <img src="assets/vietnamese.png" alt="Vietnames drink image" loading="lazy">
-          <p class="product_name">Vietnamese </p>
-          <div class="coffee_type">
-            <p>Drip Based</p>
+    <section class="products" id="products">
+      <div class="container">
+        <p class="section__title">Products</p>
+        <p class="section__subtitle">Check out our best sellers from each category and what we have more to offer.</p>
+        <div class="products__grid">
+          <div class="products__card">
+            <img src="assets/vietnamese.png" alt="Vietnamese drink image" loading="lazy">
+            <p class="products__card__title">Vietnamese </p>
+            <div class="products__card__type">
+              <p>Drip Based</p>
+            </div>
+            <div class="products__card__prices__grid">
+              <div class="products__card__price">
+                <i class="fi fi-sr-flame"></i>
+                <div>
+                  <p>12oz</p>
+                  <p>₱65.00</p>
+                </div>
+              </div>
+              <div class="products__card__price">
+                <i class="fi fi-sr-snowflake"></i>
+                <div>
+                  <p>16oz</p>
+                  <p>₱70.00</p>
+                </div>
+              </div>
+              <div class="products__card__price">
+                <i class="fi fi-sr-snowflake"></i>
+                <div>
+                  <p>500ml Jar</p>
+                  <p>₱110.00</p>
+                </div>
+              </div>
+              <div class="products__card__price">
+                <i class="fi fi-sr-snowflake"></i>
+                <div>
+                  <p>1L Bottle</p>
+                  <p>₱210.00</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="product__variations_container">
-            <div class="product__variations">
-              <i class="fi fi-sr-flame"></i>
-              <div class="product__variation_content">
-                <p>12oz</p>
-                <p>₱65.00</p>
+          <!-- Caramel Card -->
+          <div class="products__card">
+            <img src="assets/spanish-latte.jpg" alt="Spanish Latte drink image" loading="lazy">
+            <p class="products__card__title">Spanish Latte </p>
+            <div class="products__card__type">
+              <p>Espresso Based</p>
+            </div>
+            <div class="products__card__prices__grid">
+              <div class="products__card__price">
+                <i class="fi fi-sr-flame"></i>
+                <div>
+                  <p>12oz</p>
+                  <p>₱120.00</p>
+                </div>
+              </div>
+              <div class="products__card__price">
+                <i class="fi fi-sr-snowflake"></i>
+                <div>
+                  <p>16oz</p>
+                  <p>₱130.00</p>
+                </div>
+              </div>
+              <div class="products__card__price">
+                <i class="fi fi-sr-snowflake"></i>
+                <div>
+                  <p>500ml Jar</p>
+                  <p>₱170.00</p>
+                </div>
+              </div>
+              <div class="products__card__price">
+                <i class="fi fi-sr-snowflake"></i>
+                <div>
+                  <p>1L Bottle</p>
+                  <p>₱460.00</p>
+                </div>
               </div>
             </div>
-            <div class="product__variations">
-              <i class="fi fi-sr-snowflake"></i>
-              <div class="product__variation_content">
-                <p>16oz</p>
-                <p>₱70.00</p>
+          </div>
+          <!-- End of Caramel Card -->
+          <!-- Iced Milky Choco Card -->
+          <div class="products__card">
+            <img src="assets/iced milky choco.webp" alt="Iced Milky Choco drink image" loading="lazy">
+            <p class="products__card__title">Iced Milky Choco </p>
+            <div class="products__card__type">
+              <p>Milk Based</p>
+            </div>
+            <div class="products__card__prices__grid">
+              <div class="products__card__price">
+                <i class="fi fi-sr-snowflake"></i>
+                <div>
+                  <p>16oz</p>
+                  <p>₱120.00</p>
+                </div>
               </div>
             </div>
-            <div class="product__variations">
-              <i class="fi fi-sr-snowflake"></i>
-              <div class="product__variation_content">
-                <p>500ml Jar</p>
-                <p>₱110.00</p>
-              </div>
-            </div>
-            <div class="product__variations">
-              <i class="fi fi-sr-snowflake"></i>
-              <div class="product__variation_content">
-                <p>1L Bottle</p>
-                <p>₱210.00</p>
-              </div>
-            </div>
+          </div>
+          <!-- End of Iced Milky Choco card -->
+        </div>
+        <!-- Modal -->
+        <div id="open-modal" class="products__modal">
+          <div>
+            <a href="#products" title="Close" class="products__modal--close">
+              <i class="fa-solid fa-xmark"></i>
+            </a>
+            <img src="assets/menu-2.jpg" alt="BFC Menu" loading="lazy">
           </div>
         </div>
-        <!-- Caramel Card -->
-        <div class="productcard__container">
-          <img src="assets/spanish-latte.jpg" alt="Spanish Latte drink image" loading="lazy">
-          <p class="product_name">Spanish Latte </p>
-          <div class="coffee_type">
-            <p>Espresso Based</p>
-          </div>
-          <div class="product__variations_container">
-            <div class="product__variations">
-              <i class="fi fi-sr-flame"></i>
-              <div class="product__variation_content">
-                <p>12oz</p>
-                <p>₱120.00</p>
-              </div>
-            </div>
-            <div class="product__variations">
-              <i class="fi fi-sr-snowflake"></i>
-              <div class="product__variation_content">
-                <p>16oz</p>
-                <p>₱130.00</p>
-              </div>
-            </div>
-            <div class="product__variations">
-              <i class="fi fi-sr-snowflake"></i>
-              <div class="product__variation_content">
-                <p>500ml Jar</p>
-                <p>₱170.00</p>
-              </div>
-            </div>
-            <div class="product__variations">
-              <i class="fi fi-sr-snowflake"></i>
-              <div class="product__variation_content">
-                <p>1L Bottle</p>
-                <p>₱460.00</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End of Caramel Card -->
-        <!-- Iced Milky Choco Card -->
-        <div class="productcard__container">
-          <img src="assets/iced milky choco.webp" alt="Iced Milky Choco drink image" loading="lazy">
-          <p class="product_name">Iced Milky Choco </p>
-          <div class="coffee_type">
-            <p>Milk Based</p>
-          </div>
-          <div class="product__variations_container">
-            <div class="product__variations">
-              <i class="fi fi-sr-snowflake"></i>
-              <div class="product__variation_content">
-                <p>16oz</p>
-                <p>₱120.00</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End of Iced Milky Choco card -->
+        <!-- End of Modal -->
       </div>
-      <!-- Modal -->
-      <div id="open-modal" class="modal-window">
-        <div>
-          <a href="#products" title="Close" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
-          <img src="assets/menu-2.jpg" alt="BFC Menu" loading="lazy">
-        </div>
-      </div>
-      <!-- End of Modal -->
-      </div>
-      <button class="button__seemenu">
+      <button class="products__seemenubtn">
         <a href="#open-modal">See Our Menu</a>
       </button>
       </div>
     </section>
     <!-- End of Products Section -->
     <!-- Partners Section -->
-    <section class="partners__container">
-      <div class="partners__container--content">
-        <p class="partners__container_title">Order with Our Partners</p>
-        <p class="partners__container_subtitle">Just look for But First, Coffee - Olongapo</p>
-        <div class="partners_logos">
+    <section class="partners">
+      <div class="container">
+        <p class="section__title">Order with Our Partners</p>
+        <p class="section__subtitle">Just look for But First, Coffee - Olongapo</p>
+        <div class="partners__logos">
           <img src="assets/foodpanda-logo.jpg" alt="Foodpanda logo" loading="lazy">
           <img src="assets/ordermo-logo.jpg" alt="Ordermo logo" loading="lazy">
         </div>
@@ -214,22 +208,22 @@
     </section>
     <!-- End of Partners section -->
     <!-- Services Section -->
-    <section class="about__container" id="services">
-      <div class="services__container--content">
-        <p class="about__container_title">Services</p>
-        <p class="about__container_subtitle">We help Filipino coffee producers by utilizing premium local beans, and with the help of our combined technical know-how, we develop a premium product that can compete with the market's leading brands while being reasonably priced so that every Filipino may enjoy it. Anyone looking for a nice cup of coffee, anytime, anyplace, will find it accessible thanks to our best-tasting coffee and free delivery service.</p>
-        <div class="card__container_grid">
-          <div class="card__container--shadowed">
+    <section class="services" id="services">
+      <div class="container">
+        <p class="section__title">Services</p>
+        <p class="services__subtitle">We help Filipino coffee producers by utilizing premium local beans, and with the help of our combined technical know-how, we develop a premium product that can compete with the market's leading brands while being reasonably priced so that every Filipino may enjoy it. Anyone looking for a nice cup of coffee, anytime, anyplace, will find it accessible thanks to our best-tasting coffee and free delivery service.</p>
+        <div class="services__card__grid">
+          <div class="services__card">
             <img src="assets/Getting Coffee-amico.svg" alt="Two people drinking coffee vector illustration" loading="lazy">
             <p>Cozy Cafe</p>
             <p>Get together and relax in our place amidst the hot weather, it's relaxing, chilling, and of course, has Wi-Fi.</p>
           </div>
-          <div class="card__container--shadowed">
+          <div class="services__card">
             <img src="assets/Saving money-cuate.svg" alt="Saving money vector illustration" loading="lazy">
             <p>Relatively Cheaper</p>
             <p>We provide our customers with a wide range of affordable options while still producing coffee that is excellent and competitive with the market.</p>
           </div>
-          <div class="card__container--shadowed">
+          <div class="services__card">
             <img src="assets/Choice-amico.svg" alt="Person choosing image" loading="lazy">
             <p>Lots to choose from</p>
             <p>Our menu comprises of different flavors of coffee and milk based products, as well as baked goods that will make you try out every single of them, giving our customers a variety of choices.</p>
@@ -239,10 +233,10 @@
     </section>
     <!-- End of About Section -->
     <!-- Testimonials Section -->
-    <section class="testimonials__container" id="testimonials">
-      <div class="testimonials__container--content">
-        <p class="testimonials__container_title">Testimonials</p>
-        <p class="testimonials__container_subtitle">See what people has to say about But First, Coffee.</p>
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <p class="section__title">Testimonials</p>
+        <p class="section__subtitle">See what people has to say about But First, Coffee.</p>
         <div class="testimonial__grid">
           <div class="testimonial">
             <img src="https://ui-avatars.com/api/?name=Ernesta+Dymphna&background=1E1E1E&color=fff" alt="">
@@ -282,13 +276,11 @@
     <footer>
       <img src="assets/BFC-Website-Logo.png" alt="BFC logo" loading="lazy">
       <p>2022 © But First, Coffee Inc. | All Rights Reserved.</p>
-      <div class="facebook--btn">
+      <div class="footer__button">
         <a href="https://www.facebook.com/butfirstcoffeeolongapo">
           <i class="fa-brands fa-facebook"></i>
         </a>
-        <a href="https://www.facebook.com/butfirstcoffeeolongapo">
-          Visit our Facebook page
-        </a>
+        <a href="https://www.facebook.com/butfirstcoffeeolongapo"> Visit our Facebook page </a>
       </div>
     </footer>
     <!-- End of footer -->
