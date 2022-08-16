@@ -2,11 +2,11 @@
     --ff-primary: 'Poppins', sans-serif;
     --ff-secondary: 'Lora', serif;
     --ff-tertiary: 'Bebas Neue', cursive;
-    --clr-darktoneink: #121212;
+    --clr-darktoneink: #2c1f16;
     --clr-whitelight: #FFFFFF;
     --clr-black: #000000;
-    --clr-dynamicblack: #1E1E1E;
-    --clr-direwolf: #272727;
+    --clr-dynamicblack: #38271c;
+    --clr-direwolf: #6f4e37;
     --clr-gray: #7B7B7B;
 }
 /* UTILITIES */
@@ -160,7 +160,7 @@ input[type=checkbox]{
     font-family: var(--ff-secondary);
 }
 .products__card {
-    background-color: var(--clr-direwolf);
+    background-color: var(--clr-darktoneink);
     margin-top: 1rem;
     -webkit-box-shadow: 4px 4px black;
             box-shadow: 4px 4px black;
@@ -181,7 +181,7 @@ input[type=checkbox]{
 .products__card__type {
     padding: 0.25rem 1rem;
     border-radius: 50px;
-    background-color: var(--clr-darktoneink);
+    background-color: var(--clr-direwolf);
     margin: 0 0 1rem 1rem;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -198,7 +198,6 @@ input[type=checkbox]{
 }
 .products__card__price {
     padding: 0.5rem;
-    border: 1px solid gray;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -256,7 +255,7 @@ input[type=checkbox]{
     color: var(--clr-whitelight);
 }
 .services__card {
-    background-color: var(--clr-direwolf);
+    background-color: var(--clr-darktoneink);
     padding: 1rem;
     -webkit-box-shadow: 4px 4px black;
             box-shadow: 4px 4px black;
@@ -286,7 +285,7 @@ input[type=checkbox]{
             flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
-    background-color: var(--clr-direwolf);
+    background-color: var(--clr-dynamicblack);
     padding: 1rem;
     border-radius: 8px;
     -webkit-box-shadow: 4px 4px black;
@@ -358,7 +357,7 @@ footer img {
     z-index: 2;
     border: none;
     outline: none;
-    background-color: var(--clr-gray);
+    background-color: var(--clr-direwolf);
     color: white;
     cursor: pointer;
     padding: 20px;
@@ -368,7 +367,7 @@ footer img {
     transition: all .3s;
 }
 #scrollTopButton:hover {
-    background-color: #565656;
+    background-color: #593e2c;
 }
 /* Modal styles */
 .products__modal {
@@ -437,7 +436,7 @@ footer img {
     border: 4px solid var(--clr-black);
     cursor: pointer;
     position: relative;
-    background-color: var(--clr-darktoneink);
+    background-color: var(--clr-direwolf);
     text-decoration: none;
     overflow: hidden;
     z-index: 1;
@@ -565,7 +564,7 @@ footer img {
         max-width: 75ch;
     }
     .hero, .testimonials {
-        background-image: url("assets/circle-scatter-haikei.svg");
+        background-image: url("assets/circle-scatter-haikei-coffee.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
