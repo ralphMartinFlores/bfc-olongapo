@@ -54,6 +54,10 @@ li {
 .navbar__links a, label{
     color: var(--clr-whitelight);
 }
+.navbar__links a {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
 /* LOGO */
 .navbar__logo img {
     max-width: 100px;
