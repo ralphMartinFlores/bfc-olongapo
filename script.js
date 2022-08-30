@@ -11,6 +11,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-const navigationHeight = document.querySelector(".navbar").offsetHeight;
-document.documentElement.style.setProperty('--scroll-padding', navigationHeight - 1 + "px");
+// const navigationHeight = document.querySelector(".navbar").offsetHeight;
+// document.documentElement.style.setProperty('--scroll-padding', navigationHeight - 1 + "px");
 

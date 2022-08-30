@@ -27,35 +27,35 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="navbar" id="home">
-      <!-- LOGO -->
-      <div class="navbar__logo">
-        <img src="assets/BFC-Website-Logo.png" alt="BFC logo">
-      </div>
-      <!-- NAVIGATION MENU -->
-      <ul class="navbar__links">
-        <!-- USING CHECKBOX HACK -->
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <!-- NAVIGATION MENUS -->
-        <div class="navbar__menu">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#products">Products</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#testimonials">Testimonials</a>
-          </li>
-        </div>
-      </ul>
-    </nav>
     <!-- Hero Section-->
     <section class="hero">
+      <nav class="navbar" id="home">
+        <!-- LOGO -->
+        <div class="navbar__logo">
+          <img src="assets/BFC-Website-Logo.png" alt="BFC logo">
+        </div>
+        <!-- NAVIGATION MENU -->
+        <ul class="navbar__links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="navbar__menu">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#products">Products</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
       <div class="hero__content">
         <div>
           <div class="hero__content__text">
@@ -63,17 +63,18 @@
             <p> The fastest growing cafe franchise in Metro Manila, <b>now available in Olongapo City.</b> We are But First, Coffee - Olongapo. </p>
           </div>
           <div class="hero__content__cta">
-            <img src="assets/right-arrow.png" alt="Right arrow image pointing to call to action button">
+            <img src="assets/right-arrow-outline.png" alt="Right arrow image pointing to call to action button">
             <a class="hero__content__cta__button" href="#products"> Learn more about BFC below <div class="material-symbols-outlined"> expand_more </div>
             </a>
           </div>
         </div>
-        <div class="hero__content__images">
+        <img class="hero__content__illustration" src="assets/hero-hand-drawn.png" alt="">
+        <!-- <div class="hero__content__images">
           <img src="assets/more about 1.png" alt="Glass container with coffee beans image">
           <img src="assets/more about 2.jpg" alt="Brewery station image">
           <img src="assets/more about 3.jpg" alt="Main dining place image">
           <img src="assets/more about 4.png" alt="Coffee on deck images">
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- End of Hero -->
@@ -269,6 +270,12 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="photos">
+      <img src="assets/more about 1.png" alt="">
+      <img src="assets/more about 2.jpg" alt="">
+      <img src="assets/more about 4.png" alt="">
+      <img src="assets/more about 3.jpg" alt=""> 
     </section>
     <button onclick="topFunction()" id="scrollTopButton">
       <i class="fa-solid fa-arrow-up"></i>

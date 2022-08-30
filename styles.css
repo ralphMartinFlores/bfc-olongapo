@@ -18,7 +18,7 @@
 }
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: var(--scroll-padding, 100px);
+    /* scroll-padding-top: var(--scroll-padding, 100px); */
 }
 body {
     font-family: var(--ff-primary);
@@ -46,10 +46,10 @@ li {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: clamp(1.5rem, 2.5vw, 2rem);
-    background-color: var(--clr-dynamicblack);
-    position: sticky;
+    /* background-color: none; */
+    /* position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 1; */
 }
 .navbar__links a, label{
     color: var(--clr-whitelight);
@@ -71,22 +71,21 @@ li {
     gap: 1rem;
     font-size: 1.125rem;
 }
-.navbar__menu li:hover {
-    border: 4px solid black;
-    -webkit-box-shadow: 4px 4px black;
-            box-shadow: 4px 4px black;
-    background-color: var(--clr-darktoneink);
-    -webkit-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
-    transition: 0.3s ease;
-}
 .navbar__menu li {
     /* border-radius: 50px; */
-    border: 4px solid transparent;
+    /* border: 4px solid transparent;
     -webkit-box-shadow: 4px 4px transparent;
             box-shadow: 4px 4px transparent;
-    border-radius: 8px;
+    border-radius: 8px; */
+    /* border-bottom: 4px solid transparent; */
     padding: 0.25rem 1rem;
+}
+.navbar__menu a {
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar__menu a:hover {
+    border-bottom: 2px solid white;
 }
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
@@ -102,11 +101,21 @@ input[type=checkbox]{
         -ms-user-select: none;
             user-select: none;
 }
+.hero {
+    padding: 0;
+}
+.hero__content {
+    padding: 1.5rem;
+    color: var(--clr-whitelight);
+}
+.hero__content__illustration {
+    display: none;
+}
 .hero__content__cta {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -255,7 +264,7 @@ input[type=checkbox]{
     border-radius: 50%;
     max-width: 150px;
 }
-.hero, .partners, .testimonials {
+.partners, .testimonials {
     padding: 1.5rem;
     color: var(--clr-whitelight);
 }
@@ -330,6 +339,10 @@ input[type=checkbox]{
     grid-template-columns: repeat(2, 1fr);
     margin-top: 1rem;
 }
+.photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -365,7 +378,8 @@ footer img {
     background-color: var(--clr-direwolf);
     color: white;
     cursor: pointer;
-    padding: 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -517,6 +531,11 @@ footer img {
 /* End of tablet layout */
 /* Small screens and laptop layout */
 @media screen and (min-width: 1024px) {
+    .navbar {
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 32px 0;
+    }
     .navbar__logo img {
         max-width: 150px;
         height: auto;
@@ -541,23 +560,42 @@ footer img {
         padding: 0;
     }
     .hero__content {
-        display: -ms-grid;
+        /* display: -ms-grid;
         display: grid;
         -ms-grid-columns: 1fr 4rem 1fr;
         grid-template-columns: repeat(2, 1fr);
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        gap: 4rem;
+        gap: 4rem; */
+        display: grid;
+        align-items: center;
+        height: 89%;
         max-width: 70%;
         margin: 0 auto;
+        padding: 0;
+    }
+    .hero__content__text p:first-of-type {
+        max-width: 20ch;
+    }
+    .hero__content__text p:last-of-type {
+        max-width: 50ch;
     }
     .container {
         max-width: 70%;
         margin: 0 auto;
     }
     .hero {
-        padding: 9.375rem 0;
+        /* padding: 9.375rem 0; */
+        height: 100vh;
+        position: relative;
+    }
+    .hero__content__illustration {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 65%;
+        display: block;
     }
     .hero__content__images {
         margin-top: 0;
@@ -574,6 +612,9 @@ footer img {
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .photos {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 /* End of layout */
 /* Mobile Navbar styles */
@@ -581,7 +622,7 @@ footer img {
 .navbar__menu { 
     display:none;
     position: absolute;
-    background-color:var(--clr-dynamicblack);
+    background-color:var(--clr-darktoneink);
     right: 0;
     left: 0;
     text-align: center;
